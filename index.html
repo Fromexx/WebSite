@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <script src="./PageBackgroundColor.js"></script>
+    <script src="./FeedbackForm.js"></script>
+    <script src="./ModalWindow.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./Images/Icons/logo.svg" alt="Logo">
+        </div>
+
+        <div class="header__text">
+            <p>WebGenius</p>
+        </div>
+
+        <div class="header__changeBackgroundColorButton">
+            <a onclick="changeBackgroundColor()">Сменить фон</a>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <a class="navigation__item" href="./">Главное</a>
+        <a class="navigation__item" href="./">О нас</a>
+        <a class="navigation__item" href="./">Плюсы</a>
+        <a class="navigation__item" href="./">Основы</a>
+        <a class="navigation__item" onclick="openModalWindow()">Контакты</a>
+        <a class="navigation__item" href="./">Блог</a>
+    </nav>
+
+    <div id="modalWindowId" class="modalWindow">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-close">&times;</span>
+                <h2>Контакты</h2>
+            </div>
+            <div class="modal-body">
+                <p>Для того, чтобы связаться с нами, вы можете написать нам на почту или позвонить по телефону</p>
+                <p class="dataP">Телефон</p>
+                <a href="tel:+79007008090">+79007008090</a><br>
+
+                <br>
+                <p class="dataP">E-mail</p>
+                <a href="mailto:pashaignat1003@gmail.com">pashaignat1003@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero__image">
+                <img src="./Images/Icons/picture1.png" alt="picture1">
+            </div>
+
+            <div class="hero__text">
+                <h1 class="hero__h1">Добро пожаловать на сайт, посвященный веб-разработке!</h1>
+                <p class="hero__p">
+                    Что такое веб-разработка, спросите вы? Проще говоря, это процесс создания веб-сайтов и веб-приложений с использованием таких языков программирования, как HTML, CSS и JavaScript.
+                </p>
+                <p class="hero__p">
+                    Что входит в веб-разработку:
+                </p>
+                <p class="hero__p">
+                    1. Фронтенд-разработка<br>
+                    2. Бэкенд-разработка<br>
+                    3. Веб-дизайн<br>
+                    4. Создание веб-контента<br>
+                    5. Веб-тестирование и отладка<br>
+                    6. Веб-развертывание и обслуживание
+                </p>
+            </div>
+        </section>
+
+        <section class="block_1">
+            <h2 class="block_1__h2">Почему стоит стать веб-разработчиком</h2>
+            <div class="block_1__items">
+                <div class="first_items">
+                    <div class="block_1__item block_1__item_1">
+                        <h2>Нехватка кадров на рынке труда</h2>
+                        <p>Практически каждому предпринимателю необходим сайт, поэтому спрос на веб-разработчиков с каждым годом только растет. Почти 1 млн специалистов не хватает в российской IT-индустрии</p>
+                    </div>
+                    <div class="block_1__item block_1__item_2">
+                        <h2>Возможность работать удаленно</h2>
+                        <p>Веб-разработчики могут работать как в офисе, так и дистанционно. Более 2300 работодателей предлагают «работу из дома» на сайте hh.ru, а это дает много возможностей — например, выстроить удобный график для себя или работать в любом городе нашей страны.</p>
+                    </div>
+                </div>
+
+                <div class="second_items">
+                    <div class="block_1__item block_1__item_3">
+                        <h2>Быстрый карьерный рост</h2>
+                        <p>Если вы будете постоянно развивать навыки и проводить анализ своей работы, то повышение не заставит себя долго ждать. Устроиться на работу можно уже в процессе обучения, за несколько лет вырасти из новичка в среднего специалиста, а потом и до старшего.</p>
+                    </div>
+                    <div class="block_1__item block_1__item_4">
+                        <h2>Хороший уровень дохода</h2>
+                        <p>Уровень зарплат разработчиков действительно высокий, что делает эту профессию еще привлекательней. Зарплатный диапазон составляет примерно от 50 000 до 300 000, в зависимости от выбранной должности и имеющегося опыта.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="block_2">
+            <h2 class="block_2__h2">Основы</h2>
+            <div class="block_2__items">
+                <div><img src="./Images/Icons/html.png" alt="html"></div>
+                <div><img src="./Images/Icons/css.png" alt="css"></div>
+                <div><img src="./Images/Icons/JavaScript.png" alt="JavaScript"></div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container feedback-form">
+                <div class="feedback-form__header">Хочешь получать полезные обучающие рассылки от нас? Нужно только заполнить форму!</div>
+                <form action="#">
+                    <div class="feedback-form__content">
+                        <input type="text" class="input-box" placeholder="Имя" id="feedback-form__name">
+                        <input type="text" class="input-box" placeholder="E-mail" id="feedback-form__email">
+                        <input onclick="sendFeedbackForm()" type="submit" class="button" value="Отправить">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer__logo">
+                <div class="footer__img">
+                    <img src="./Images/Icons/logo.svg" alt="Logo">
+                </div>
+        
+                <div class="footer__logo-text">
+                    <p>WebGenius</p>
+                </div>
+            </div>
+            
+            <div class="footer__text">
+                Этот сайт был создан Игнатьевом Павлом. All rights reserved © 2023
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
