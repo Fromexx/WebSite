@@ -15,17 +15,20 @@
     <script src="./PageBackgroundColor.js"></script>
     <script src="./FeedbackForm.js"></script>
     <script src="./ModalWindow.js"></script>
+    <script src="./Swiper.js"></script>
 </head>
 <body>
     <header class="header">
-        <div class="header__logo">
-            <img src="./Images/Icons/logo.svg" alt="Logo">
-        </div>
+        <div class="header__name">
+            <div class="header__logo">
+                <img src="./Images/Icons/logo.svg" alt="Logo">
+            </div>
 
-        <div class="header__text">
-            <p>WebGenius</p>
+            <div class="header__text">
+                <p>WebGenius</p>
+            </div>
         </div>
-
+        
         <div class="header__changeBackgroundColorButton">
             <a onclick="changeBackgroundColor()">Сменить фон</a>
         </div>
@@ -110,12 +113,16 @@
             </div>
         </section>
 
-        <section class="block_2">
-            <h2 class="block_2__h2">Основы</h2>
-            <div class="block_2__items">
-                <div><img src="./Images/Icons/html.png" alt="html"></div>
-                <div><img src="./Images/Icons/css.png" alt="css"></div>
-                <div><img src="./Images/Icons/JavaScript.png" alt="JavaScript"></div>
+        <section>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./Images/Icons/html.png" alt="html"></div>
+                    <div class="swiper-slide"><img src="./Images/Icons/css.png" alt="css"></div>
+                    <div class="swiper-slide"><img src="./Images/Icons/JavaScript.png" alt="JavaScript"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-previous"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
 
@@ -150,5 +157,23 @@
             </div>
         </div>
     </footer>
+
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+
+        const swiper = new Swiper(".swiper", {
+            direction: 'vertical',
+            loop: true,
+
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 </html>
